@@ -38,10 +38,13 @@ categories:
 ###  plugin goal
 上面我们说到,`maven`只是定义了一个架子,那我们日常执行的`complie`,`package`是怎么执行的呢?
 这一切都来源于`maven`的精髓`plugin goal`,虽然每个`lifecycle`和`phase`并没有做任何事,但是`maven`可以将`plug goal`绑定到各个`phase`,从而执行想要的操作.
+
 `phase`是由`plugin goal`组成的,`plug goal`是一系列特定的任务,是比`phase`更细粒度的任务.
 一个`plug goal`可以绑定到`0-n`个`phase`,一个`phase`也可以绑定`0-n`个`plug goal`
+
 如果一个`plug goal`没有绑定任何一个`phase`,可以脱离`lifecycle`直接调用
 如果一个`phase`没有绑定任何`plug goal`,`phase`不会执行
+
 现在回到上面的问题;
 > 上面我们说到,`maven`只是定义了一个架子,那我们日常执行的`complie`,`package`是怎么执行的呢?
 

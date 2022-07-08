@@ -7,7 +7,10 @@ lifecycle 和 phase 要研究maven是怎么构建的,要先了解maven的lifecyc
  default clean site  如果需要自己添加lifecycle可以自己更改${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml配置文件
 每个lifecycle由不同的phase组成,lifecycle就是用来配置phase执行的.例如clean由以下phase组成:
  pre-clean clean post-clean  需要注意两点:
- phase是有顺序的,先执行后面的phase会把前面的也执行 但是需要注意的是,maven只是定义了这些lifecycle和phase,里面并没有做任何事情,maven只是定义了一个架子  plugin goal 上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢? 这一切都来源于maven的精髓plugin goal,虽然每个lifecycle和phase并没有做任何事,但是maven可以将plug goal绑定到各个phase,从而执行想要的操作. phase是由plugin goal组成的,plug goal是一系列特定的任务,是比phase更细粒度的任务. 一个plug goal可以绑定到0-n个phase,一个phase也可以绑定0-n个plug goal 如果一个plug goal没有绑定任何一个phase,可以脱离lifecycle直接调用 如果一个phase没有绑定任何plug goal,phase不会执行 现在回到上面的问题;
+ phase是有顺序的,先执行后面的phase会把前面的也执行 但是需要注意的是,maven只是定义了这些lifecycle和phase,里面并没有做任何事情,maven只是定义了一个架子  plugin goal 上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢? 这一切都来源于maven的精髓plugin goal,虽然每个lifecycle和phase并没有做任何事,但是maven可以将plug goal绑定到各个phase,从而执行想要的操作.
+phase是由plugin goal组成的,plug goal是一系列特定的任务,是比phase更细粒度的任务. 一个plug goal可以绑定到0-n个phase,一个phase也可以绑定0-n个plug goal
+如果一个plug goal没有绑定任何一个phase,可以脱离lifecycle直接调用 如果一个phase没有绑定任何plug goal,phase不会执行
+现在回到上面的问题;
  上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢?
  这其中的奥妙就在于maven提供了一系列默认的plug goal来绑定到对应的phase,从而就有了开箱即用的感觉.
 给phase添加plug goal 那么问题来了,如何给phase添加plug goal呢,官方文档介绍了两种方式:
@@ -23,7 +26,10 @@ lifecycle 和 phase 要研究maven是怎么构建的,要先了解maven的lifecyc
  default clean site  如果需要自己添加lifecycle可以自己更改${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml配置文件
 每个lifecycle由不同的phase组成,lifecycle就是用来配置phase执行的.例如clean由以下phase组成:
  pre-clean clean post-clean  需要注意两点:
- phase是有顺序的,先执行后面的phase会把前面的也执行 但是需要注意的是,maven只是定义了这些lifecycle和phase,里面并没有做任何事情,maven只是定义了一个架子  plugin goal 上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢? 这一切都来源于maven的精髓plugin goal,虽然每个lifecycle和phase并没有做任何事,但是maven可以将plug goal绑定到各个phase,从而执行想要的操作. phase是由plugin goal组成的,plug goal是一系列特定的任务,是比phase更细粒度的任务. 一个plug goal可以绑定到0-n个phase,一个phase也可以绑定0-n个plug goal 如果一个plug goal没有绑定任何一个phase,可以脱离lifecycle直接调用 如果一个phase没有绑定任何plug goal,phase不会执行 现在回到上面的问题;
+ phase是有顺序的,先执行后面的phase会把前面的也执行 但是需要注意的是,maven只是定义了这些lifecycle和phase,里面并没有做任何事情,maven只是定义了一个架子  plugin goal 上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢? 这一切都来源于maven的精髓plugin goal,虽然每个lifecycle和phase并没有做任何事,但是maven可以将plug goal绑定到各个phase,从而执行想要的操作.
+phase是由plugin goal组成的,plug goal是一系列特定的任务,是比phase更细粒度的任务. 一个plug goal可以绑定到0-n个phase,一个phase也可以绑定0-n个plug goal
+如果一个plug goal没有绑定任何一个phase,可以脱离lifecycle直接调用 如果一个phase没有绑定任何plug goal,phase不会执行
+现在回到上面的问题;
  上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢?
  这其中的奥妙就在于maven提供了一系列默认的plug goal来绑定到对应的phase,从而就有了开箱即用的感觉.
 给phase添加plug goal 那么问题来了,如何给phase添加plug goal呢,官方文档介绍了两种方式:
@@ -39,7 +45,10 @@ lifecycle 和 phase 要研究maven是怎么构建的,要先了解maven的lifecyc
  default clean site  如果需要自己添加lifecycle可以自己更改${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml配置文件
 每个lifecycle由不同的phase组成,lifecycle就是用来配置phase执行的.例如clean由以下phase组成:
  pre-clean clean post-clean  需要注意两点:
- phase是有顺序的,先执行后面的phase会把前面的也执行 但是需要注意的是,maven只是定义了这些lifecycle和phase,里面并没有做任何事情,maven只是定义了一个架子  plugin goal 上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢? 这一切都来源于maven的精髓plugin goal,虽然每个lifecycle和phase并没有做任何事,但是maven可以将plug goal绑定到各个phase,从而执行想要的操作. phase是由plugin goal组成的,plug goal是一系列特定的任务,是比phase更细粒度的任务. 一个plug goal可以绑定到0-n个phase,一个phase也可以绑定0-n个plug goal 如果一个plug goal没有绑定任何一个phase,可以脱离lifecycle直接调用 如果一个phase没有绑定任何plug goal,phase不会执行 现在回到上面的问题;
+ phase是有顺序的,先执行后面的phase会把前面的也执行 但是需要注意的是,maven只是定义了这些lifecycle和phase,里面并没有做任何事情,maven只是定义了一个架子  plugin goal 上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢? 这一切都来源于maven的精髓plugin goal,虽然每个lifecycle和phase并没有做任何事,但是maven可以将plug goal绑定到各个phase,从而执行想要的操作.
+phase是由plugin goal组成的,plug goal是一系列特定的任务,是比phase更细粒度的任务. 一个plug goal可以绑定到0-n个phase,一个phase也可以绑定0-n个plug goal
+如果一个plug goal没有绑定任何一个phase,可以脱离lifecycle直接调用 如果一个phase没有绑定任何plug goal,phase不会执行
+现在回到上面的问题;
  上面我们说到,maven只是定义了一个架子,那我们日常执行的complie,package是怎么执行的呢?
  这其中的奥妙就在于maven提供了一系列默认的plug goal来绑定到对应的phase,从而就有了开箱即用的感觉.
 给phase添加plug goal 那么问题来了,如何给phase添加plug goal呢,官方文档介绍了两种方式:
@@ -369,12 +378,12 @@ Packaging 设置packaging元素不同的值,就是将不同的plug goal绑定的
 </ul>
 <h3 id="plugin-goal">plugin goal</h3>
 <p>上面我们说到,<code>maven</code>只是定义了一个架子,那我们日常执行的<code>complie</code>,<code>package</code>是怎么执行的呢?
-这一切都来源于<code>maven</code>的精髓<code>plugin goal</code>,虽然每个<code>lifecycle</code>和<code>phase</code>并没有做任何事,但是<code>maven</code>可以将<code>plug goal</code>绑定到各个<code>phase</code>,从而执行想要的操作.
-<code>phase</code>是由<code>plugin goal</code>组成的,<code>plug goal</code>是一系列特定的任务,是比<code>phase</code>更细粒度的任务.
-一个<code>plug goal</code>可以绑定到<code>0-n</code>个<code>phase</code>,一个<code>phase</code>也可以绑定<code>0-n</code>个<code>plug goal</code>
-如果一个<code>plug goal</code>没有绑定任何一个<code>phase</code>,可以脱离<code>lifecycle</code>直接调用
-如果一个<code>phase</code>没有绑定任何<code>plug goal</code>,<code>phase</code>不会执行
-现在回到上面的问题;</p>
+这一切都来源于<code>maven</code>的精髓<code>plugin goal</code>,虽然每个<code>lifecycle</code>和<code>phase</code>并没有做任何事,但是<code>maven</code>可以将<code>plug goal</code>绑定到各个<code>phase</code>,从而执行想要的操作.</p>
+<p><code>phase</code>是由<code>plugin goal</code>组成的,<code>plug goal</code>是一系列特定的任务,是比<code>phase</code>更细粒度的任务.
+一个<code>plug goal</code>可以绑定到<code>0-n</code>个<code>phase</code>,一个<code>phase</code>也可以绑定<code>0-n</code>个<code>plug goal</code></p>
+<p>如果一个<code>plug goal</code>没有绑定任何一个<code>phase</code>,可以脱离<code>lifecycle</code>直接调用
+如果一个<code>phase</code>没有绑定任何<code>plug goal</code>,<code>phase</code>不会执行</p>
+<p>现在回到上面的问题;</p>
 <blockquote>
 <p>上面我们说到,<code>maven</code>只是定义了一个架子,那我们日常执行的<code>complie</code>,<code>package</code>是怎么执行的呢?</p>
 </blockquote>
