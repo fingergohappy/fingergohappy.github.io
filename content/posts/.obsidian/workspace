@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "c62daa297d1036cf",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a89e71900a0a640",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "maven-lifecycle-phase.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7ed62c7f157a794f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4673c9cf01be9a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83569a406cdafe43",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9eb88663997b448b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "816f98ed5f9f02fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "b36fa33e4e48d2f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cb463a373de6abe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "maven-lifecycle-phase.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9a89e71900a0a640",
+  "lastOpenFiles": [
+    "maven-lifecycle-phase.md",
+    "my-first-post.md"
+  ]
+}
