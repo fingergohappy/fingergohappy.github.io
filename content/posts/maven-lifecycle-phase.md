@@ -24,7 +24,8 @@ categories:
 - clean
 - site
 
-如果需要自己添加`lifecycle`可以自己更多`${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml`配置文件
+如果需要自己添加`lifecycle`可以自己更改`${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml`配置文件
+
 每个`lifecycle`由不同的`phase`组成,`lifecycle`就是用来配置phase执行的.例如`clean`由以下`phase`组成:
 - `pre-clean`
 - `clean`
