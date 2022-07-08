@@ -15,7 +15,7 @@
         <description>&lt;h2 id=&#34;啥是maven&#34;&gt;啥是maven&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;maven&lt;/code&gt;是一个构建工具,啥又是构建工具?简单来说,构建工具就是自动化从源代码执行的工具.包括但不限于,自动编译,打包,部署,创建文档等&lt;/p&gt;
 &lt;h2 id=&#34;maven怎么进行自动构建&#34;&gt;Maven怎么进行自动构建&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;maven&lt;/code&gt;通过项目读取项目根目录中的&lt;code&gt;pom.xml&lt;/code&gt;文件最终构建成一个&lt;code&gt;pom(proejct object model)&lt;/code&gt;对象,来获取项目的构建信息,比如,父级项目,项目依赖那些&lt;code&gt;jar&lt;/code&gt;包,最终的打包结果是什么,已经&lt;code&gt;jdk&lt;/code&gt;的版本.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;maven&lt;/code&gt;通过项目读取项目根目录中的&lt;code&gt;pom.xml&lt;/code&gt;文件最终构建成一个&lt;code&gt;pom(proejct object model)&lt;/code&gt;对象,来获取项目的构建信息,比如,父级项目,项目依赖哪些包,最终的打包结果是什么,&lt;code&gt;jdk&lt;/code&gt;的版本等等.&lt;/p&gt;
 &lt;h2 id=&#34;lifecycle-和-phase&#34;&gt;lifecycle 和 phase&lt;/h2&gt;
 &lt;p&gt;要研究maven是怎么构建的,要先了解&lt;code&gt;maven&lt;/code&gt;的&lt;code&gt;lifecycle&lt;/code&gt;和&lt;code&gt;phase&lt;/code&gt;.
 &lt;code&gt;maven&lt;/code&gt; 的整个构建过程是基于&lt;code&gt;lifecycle&lt;/code&gt;,而&lt;code&gt;lifecycle&lt;/code&gt;是有&lt;code&gt;phase&lt;/code&gt;构成的.

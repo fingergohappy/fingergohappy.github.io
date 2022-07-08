@@ -14,7 +14,7 @@ categories:
 `maven`是一个构建工具,啥又是构建工具?简单来说,构建工具就是自动化从源代码执行的工具.包括但不限于,自动编译,打包,部署,创建文档等
 
 ## Maven怎么进行自动构建
-`maven`通过项目读取项目根目录中的`pom.xml`文件最终构建成一个`pom(proejct object model)`对象,来获取项目的构建信息,比如,父级项目,项目依赖那些`jar`包,最终的打包结果是什么,已经`jdk`的版本.
+`maven`通过项目读取项目根目录中的`pom.xml`文件最终构建成一个`pom(proejct object model)`对象,来获取项目的构建信息,比如,父级项目,项目依赖哪些包,最终的打包结果是什么,`jdk`的版本等等.
 
 ## lifecycle 和 phase
 要研究maven是怎么构建的,要先了解`maven`的`lifecycle`和`phase`.

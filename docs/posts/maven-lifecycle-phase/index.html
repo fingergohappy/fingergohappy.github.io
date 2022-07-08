@@ -2,7 +2,7 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='啥是maven maven是一个构建工具,啥又是构建工具?简单来说,构建工具就是自动化从源代码执行的工具.包括但不限于,自动编译,打包,部署,创建文档等
-Maven怎么进行自动构建 maven通过项目读取项目根目录中的pom.xml文件最终构建成一个pom(proejct object model)对象,来获取项目的构建信息,比如,父级项目,项目依赖那些jar包,最终的打包结果是什么,已经jdk的版本.
+Maven怎么进行自动构建 maven通过项目读取项目根目录中的pom.xml文件最终构建成一个pom(proejct object model)对象,来获取项目的构建信息,比如,父级项目,项目依赖哪些包,最终的打包结果是什么,jdk的版本等等.
 lifecycle 和 phase 要研究maven是怎么构建的,要先了解maven的lifecycle和phase. maven 的整个构建过程是基于lifecycle,而lifecycle是有phase构成的. maven内置3个lifecyle:
  default clean site  如果需要自己添加lifecycle可以自己更多${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml配置文件 每个lifecycle由不同的phase组成,lifecycle就是用来配置phase执行的.例如clean由以下phase组成:
  pre-clean clean post-clean  需要注意两点:
@@ -17,7 +17,7 @@ Packaging 设置packaging元素不同的值,就是将不同的plug goal绑定的
 
 <link rel="stylesheet" href="/scss/style.min.722a5ad12621c8cbbaa6b2f6f2438dcbc9fd8dbd40baf60d65df833fa887fa30.css"><meta property='og:title' content='浅析Maven的lifecycle和phase'>
 <meta property='og:description' content='啥是maven maven是一个构建工具,啥又是构建工具?简单来说,构建工具就是自动化从源代码执行的工具.包括但不限于,自动编译,打包,部署,创建文档等
-Maven怎么进行自动构建 maven通过项目读取项目根目录中的pom.xml文件最终构建成一个pom(proejct object model)对象,来获取项目的构建信息,比如,父级项目,项目依赖那些jar包,最终的打包结果是什么,已经jdk的版本.
+Maven怎么进行自动构建 maven通过项目读取项目根目录中的pom.xml文件最终构建成一个pom(proejct object model)对象,来获取项目的构建信息,比如,父级项目,项目依赖哪些包,最终的打包结果是什么,jdk的版本等等.
 lifecycle 和 phase 要研究maven是怎么构建的,要先了解maven的lifecycle和phase. maven 的整个构建过程是基于lifecycle,而lifecycle是有phase构成的. maven内置3个lifecyle:
  default clean site  如果需要自己添加lifecycle可以自己更多${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml配置文件 每个lifecycle由不同的phase组成,lifecycle就是用来配置phase执行的.例如clean由以下phase组成:
  pre-clean clean post-clean  需要注意两点:
@@ -32,7 +32,7 @@ Packaging 设置packaging元素不同的值,就是将不同的plug goal绑定的
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='build tool' /><meta property='article:tag' content='maven' /><meta property='article:published_time' content='2022-07-03T21:21:01&#43;08:00'/><meta property='article:modified_time' content='2022-07-03T21:21:01&#43;08:00'/>
 <meta name="twitter:title" content="浅析Maven的lifecycle和phase">
 <meta name="twitter:description" content="啥是maven maven是一个构建工具,啥又是构建工具?简单来说,构建工具就是自动化从源代码执行的工具.包括但不限于,自动编译,打包,部署,创建文档等
-Maven怎么进行自动构建 maven通过项目读取项目根目录中的pom.xml文件最终构建成一个pom(proejct object model)对象,来获取项目的构建信息,比如,父级项目,项目依赖那些jar包,最终的打包结果是什么,已经jdk的版本.
+Maven怎么进行自动构建 maven通过项目读取项目根目录中的pom.xml文件最终构建成一个pom(proejct object model)对象,来获取项目的构建信息,比如,父级项目,项目依赖哪些包,最终的打包结果是什么,jdk的版本等等.
 lifecycle 和 phase 要研究maven是怎么构建的,要先了解maven的lifecycle和phase. maven 的整个构建过程是基于lifecycle,而lifecycle是有phase构成的. maven内置3个lifecyle:
  default clean site  如果需要自己添加lifecycle可以自己更多${MAVEN_HOME}/libexec/lib/maven-core-3.8.5/META-INF/plexus/components.xml配置文件 每个lifecycle由不同的phase组成,lifecycle就是用来配置phase执行的.例如clean由以下phase组成:
  pre-clean clean post-clean  需要注意两点:
@@ -342,7 +342,7 @@ Packaging 设置packaging元素不同的值,就是将不同的plug goal绑定的
     <h2 id="啥是maven">啥是maven</h2>
 <p><code>maven</code>是一个构建工具,啥又是构建工具?简单来说,构建工具就是自动化从源代码执行的工具.包括但不限于,自动编译,打包,部署,创建文档等</p>
 <h2 id="maven怎么进行自动构建">Maven怎么进行自动构建</h2>
-<p><code>maven</code>通过项目读取项目根目录中的<code>pom.xml</code>文件最终构建成一个<code>pom(proejct object model)</code>对象,来获取项目的构建信息,比如,父级项目,项目依赖那些<code>jar</code>包,最终的打包结果是什么,已经<code>jdk</code>的版本.</p>
+<p><code>maven</code>通过项目读取项目根目录中的<code>pom.xml</code>文件最终构建成一个<code>pom(proejct object model)</code>对象,来获取项目的构建信息,比如,父级项目,项目依赖哪些包,最终的打包结果是什么,<code>jdk</code>的版本等等.</p>
 <h2 id="lifecycle-和-phase">lifecycle 和 phase</h2>
 <p>要研究maven是怎么构建的,要先了解<code>maven</code>的<code>lifecycle</code>和<code>phase</code>.
 <code>maven</code> 的整个构建过程是基于<code>lifecycle</code>,而<code>lifecycle</code>是有<code>phase</code>构成的.
