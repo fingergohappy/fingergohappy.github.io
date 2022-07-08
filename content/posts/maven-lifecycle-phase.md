@@ -1,7 +1,7 @@
 ---
 title: "浅析Maven的lifecycle和phase"
 date: 2022-07-03T21:21:01+08:00
-draft: true
+draft: false
 author: finger
 tags:
     - 'build tool'
