@@ -66,9 +66,22 @@ theme:
   profile_shape: diamond # support `circle`, `diamond`, `rounded`
   feature: true
   gradient:
-    color_1: '#24c6dc'
-    color_2: '#5433ff'
-    color_3: '#ff0099'
+    # color_1: '#24c6dc'
+    # color_2: '#5433ff'
+    # color_3: '#ff0099'
+    -- chatgpt生成
+    # color_1: '#001f3f'  # 深蓝色
+    # color_2: '#B10DC9'  # 紫色
+    # color_3: '#FF4136'  # 鲜艳红
+    #  文心一言 生成
+    # color_1: '#0099ff' # 深蓝色，代表赛博朋克中的科技元素  
+    # color_2: '#ff0099' # 洋红色，为赛博朋克中的霓虹灯光色彩  
+    # color_3: '#ff9900' # 橙色，增加温暖感，同时与洋红色形成对比
+    # bing ai生成
+    color_1: '#0F0A3C'  # 深紫色
+    color_2: '#FF0000'  # 鲜红色
+    color_3: '#00FFFF'  # 青色
+
 
 #! ---------------------------------------------------------------
 #! Social Configs
