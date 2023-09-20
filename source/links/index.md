@@ -5,7 +5,7 @@ type: frients
 categoryMode: true
 data:
     -   nick: 杨河老李
-        avatar: https://kviccn.github.io/favicon.ico 
+        avatar: https://kviccn.github.io/logo.jpg
         description: Think like an artist, develop like an artisan.
         link: https://kviccn.github.io/
         # label: links-badge-vip
