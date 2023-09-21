@@ -1,7 +1,8 @@
 ---
 title: java byte array 转String在转回byte array不相等
 tags:
-  - java encode
+  - java
+  - encode
 categories:
   - java
 cover: https://source.unsplash.com/AtccjBkdl-I/1200x628
