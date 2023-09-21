@@ -8,6 +8,7 @@ categories:
 date: 2023-09-20 10:37:19
 cover: https://source.unsplash.com/m_HRfLhgABo/1200x628
 abstracts: macos结合使用,vim切换模式实现自动切换输入法
+feature: true
 ---
 
 
@@ -85,5 +86,3 @@ brew install im-select
 
 ## 参考文档
 [https://karabiner-elements.pqrs.org/docs](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/to/shell-command/)
-
-
