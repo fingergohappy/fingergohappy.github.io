@@ -15,7 +15,7 @@ abstracts: 如何在idea中配置vim,让写代码更加舒服
 - [安装](#安装)
 - [配置`.ideavimrc`](#配置ideavimrc)
 - [让其生效](#让其生效)
-- [FBI WARNING](#fbi-warning)
+- [FBI WARNING](#FBI-WARNING)
 <!--toc:end-->
 
 # vim搓一切?
