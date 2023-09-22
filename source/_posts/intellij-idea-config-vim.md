@@ -10,13 +10,6 @@ date: 2023-09-22 17:04:46
 abstracts: 如何在idea中配置vim,让写代码更加舒服
 ---
 
-<!--toc:start-->
-- [vim搓一切?](#vim搓一切)
-- [安装](#安装)
-- [配置`.ideavimrc`](#配置ideavimrc)
-- [让其生效](#让其生效)
-- [FBI WARNING](#FBI-WARNING)
-<!--toc:end-->
 
 # vim搓一切?
 
@@ -38,15 +31,14 @@ abstracts: 如何在idea中配置vim,让写代码更加舒服
 
 加入一些配置:
 
-
-```bash
+```vim
 "                   ____       _      ____    ___    ____
 "                  | __ )     / \    / ___|  |_ _|  / ___|
 "                  |  _ \    / _ \   \___ \   | |  | |
 "                  | |_) |  / ___ \   ___) |  | |  | |___
 "                  |____/  /_/   \_\ |____/  |___|  \____|
 
-" basic config {{{
+
 " 上下预留5行
 set so=5
 " 不折叠 set nowrap
@@ -63,7 +55,7 @@ set relativenumber
 set nu
 set ignorecase
 set smartcase
-"}}}
+
 
 "                   ____    _       _   _    ____   ___   _   _
 "                  |  _ \  | |     | | | |  / ___| |_ _| | \ | |
@@ -72,7 +64,6 @@ set smartcase
 "                  |_|     |_____|  \___/   \____| |___| |_| \_|
 "
 "
-" plugin config {{{
 
 "开启多光标支持
 Plug 'machakann/vim-highlightedyank'
@@ -84,7 +75,7 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 
 
-"USAGE {{{{
+"USAGE 
 " add surround
 " ys{textobject motion}{indeifier}
 " eg:
@@ -95,9 +86,9 @@ Plug 'tpope/vim-commentary'
 "
 " change surround 
 " cs[(
-"}}}}
+
 Plug "tpope/vim-surround"
-"USAGE {{{{
+"USAGE 
 " [count]["x]gr{motion}   Replace {motion} text with the contents of register x.
 "                         Especially when using the unnamed register, this is
 "                         quicker than "_d{motion}P or "_c{motion}<C-R>"
@@ -105,9 +96,9 @@ Plug "tpope/vim-surround"
 "                         To replace from the cursor position to the end of the
 "                         line use ["x]gr$
 " {Visual}["x]gr          Replace the selection with the contents of register x."
-"}}}}
+
 Plug 'vim-scripts/ReplaceWithRegister'
-" USAGE {{{{
+" USAGE 
 " cx
 " On the first use, define the first {motion} to exchange. On the second use, define the second {motion} and perform the exchange.
 "
@@ -120,7 +111,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 " cxc
 " Clear any {motion} pending for exchange.
 "
-" }}}}
+
 Plug 'tommcdo/vim-exchange'
 Plug 'terryma/vim-multiple-cursors'
 " quick-scop cofnig
@@ -134,8 +125,6 @@ let g:qs_accepted_chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'
 set ideajoin
 set sneak
 
-"}}}
-
 
 "                   _  __  _____  __   __  __  __      _      ____
 "                  | |/ / | ____| \ \ / / |  \/  |    / \    |  _ \
@@ -143,7 +132,8 @@ set sneak
 "                  | . \  | |___    | |   | |  | |  / ___ \  |  __/
 "                  |_|\_\ |_____|   |_|   |_|  |_| /_/   \_\ |_|
 
-" basic key map {{{inoremap <C-e> <END>
+" basic key map 
+inoremap <C-e> <END>
 inoremap <C-a> <HOME>
 inoremap <C-f> <Right>
 inoremap <C-b> <Left>
@@ -156,9 +146,8 @@ inoremap <C-d> <Del>
 
 
 let mapleader=" "
-"}}}
 
-" idea action config {{{
+" idea action config
 nnoremap gd <Action>(GotoDeclaration)
 nnoremap gi <Action>(GotoImplementation)
 nnoremap gs <Action>(GotoSuperMethod)
@@ -182,10 +171,9 @@ map <leader>es <Action>(FileStructurePopup)
 
 
 nmap <C-W>q <Action>(CloseAllEditors)
-"}}}
 
 
-" plugin config {{{
+" plugin config 
 
 let g:multi_cursor_use_default_mapping=0
 
@@ -198,20 +186,8 @@ let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
-" nmap <C-n> <Plug>NextWholeOccurrence
-" xmap <C-n> <Plug>NextWholeOccurrence
-" nmap g<C-n> <Plug>NextOccurrence
-" xmap g<C-n> <Plug>NextOccurrence
-" nmap <C-x> <Plug>SkipOccurrence
-" xmap <C-x> <Plug>SkipOccurrence
-" nmap <C-p> <Plug>RemoveOccurrence
-" xmap <C-p> <Plug>RemoveOccurrence
-" nmap <S-C-n> <Plug>AllWholeOccurrences
-" xmap <S-C-n> <Plug>AllWholeOccurrences
-" nmap g<S-C-n> <Plug>AllOccurrences
-" xmap g<S-C-n> <Plug>AllOccurrences
 
-""}}}
+
 
 ```
 
