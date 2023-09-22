@@ -21,7 +21,7 @@ abstracts: 如何在idea中配置vim,让写代码更加舒服
 #  安装
 
 
-首先你要有一个java第一个IDE:`intellij idea`
+首先你要有一个 **java第一** IDE:`intellij idea`
 然后打开插件市场,下一个idea vimrc 安装上
 
 
