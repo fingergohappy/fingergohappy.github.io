@@ -30,7 +30,7 @@ abstracts: vscode更好用的vim插件:Neovim
 
 另外我也没有在`vim`插件的文档中找到如何更改`easymotion`的快捷键的地方,如果可以改的话也可以进行配置(我的`intellij idea`就是通过这个更改实现类`flash`模式)
 
-而`vscode`中的[neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)可以使用`neovim`的原生插件,这一点就非常舒服了,
+而`vscode`中的[neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)插件可以使用`neovim`的原生插件,这一点就非常舒服了,
 这个插件的基本原理大概就是:使用`vscode`去连接一个`neovim`实例,然后在`command`和`normal`模式下,将用户输入的命令直接传给`neovim`
 
 
@@ -39,7 +39,7 @@ abstracts: vscode更好用的vim插件:Neovim
 
 安装就不多说了,有手就行
 
-有一些主要的地方是:
+有一些需要注意的地方是:
 
 1. 需要指定`neovim`的安装位置
 2. 如果需要个性化配置,可以制定一个`init.lua`/`init.vim`文件
