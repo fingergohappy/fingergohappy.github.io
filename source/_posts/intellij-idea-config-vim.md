@@ -4,8 +4,8 @@ tags:
   - idea
   - vim
 categories:
-  - idea
-cover: https://source.unsplash.com/1200x628
+  - 万物皆可vim
+cover: https://source.unsplash.com/Bss5nhYnLKU/1200x628
 date: 2023-09-22 17:04:46
 abstracts: 如何在idea中配置vim,让写代码更加舒服
 ---
