@@ -4,10 +4,6 @@ date: 2023-09-18 11:32:54
 ---
 
 
+I am not writing BUG
 
-```python
-
-print("苟利国家生死以,岂因祸福避趋之")
-
-
-```
+I am the BUG
