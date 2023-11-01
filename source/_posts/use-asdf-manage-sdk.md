@@ -5,7 +5,7 @@ tags:
   - asdf manage
 categories:
   - 效率工具
-cover: https://source.unsplash.com/1200x628
+cover: https://source.unsplash.com/monitor-displaying-indexhtml-codes-_SgRNwAVNKw/1200x628
 date: 2023-09-26 12:18:16
 abstracts:
 ---
