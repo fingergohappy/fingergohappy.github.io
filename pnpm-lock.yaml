@@ -36,8 +36,8 @@ dependencies:
     specifier: ^3.0.0
     version: 3.0.0
   hexo-theme-aurora:
-    specifier: ^2.5.2
-    version: 2.5.2
+    specifier: ^2.5.3
+    version: 2.5.3
   hexo-theme-landscape:
     specifier: ^1.0.0
     version: 1.0.0
@@ -162,7 +162,7 @@ packages:
     dependencies:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.20
-      to-fast-properties: r2.cnpmjs.org/to-fast-properties@2.0.0
+      to-fast-properties: 2.0.0
     dev: false
 
   /@intlify/core-base@9.4.1:
@@ -210,7 +210,7 @@ packages:
     dependencies:
       '@babel/parser': 7.22.16
       '@vue/shared': 3.3.4
-      estree-walker: r2.cnpmjs.org/estree-walker@2.0.2
+      estree-walker: 2.0.2
       source-map-js: 1.0.2
     dev: false
 
@@ -230,7 +230,7 @@ packages:
       '@vue/compiler-ssr': 3.3.4
       '@vue/reactivity-transform': 3.3.4
       '@vue/shared': 3.3.4
-      estree-walker: r2.cnpmjs.org/estree-walker@2.0.2
+      estree-walker: 2.0.2
       magic-string: 0.30.3
       postcss: 8.4.29
       source-map-js: 1.0.2
@@ -253,7 +253,7 @@ packages:
       '@babel/parser': 7.22.16
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
-      estree-walker: r2.cnpmjs.org/estree-walker@2.0.2
+      estree-walker: 2.0.2
       magic-string: 0.30.3
     dev: false
 
@@ -413,7 +413,7 @@ packages:
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
-      proxy-from-env: r2.cnpmjs.org/proxy-from-env@1.1.0
+      proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -785,6 +785,10 @@ packages:
     engines: {node: '>=4.0'}
     dev: false
 
+  /estree-walker@2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+    dev: false
+
   /esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
@@ -1023,16 +1027,16 @@ packages:
       - supports-color
     dev: false
 
-  /hexo-theme-aurora@2.5.2:
-    resolution: {integrity: sha512-PovlolNauGH8ZZRLo5F/O78jzK+7w7TG+xMw+2KSyUyUdsgMryi5G8fIgpJDB1KnjcWZdWIvY2fW9Y07l4I2KA==}
+  /hexo-theme-aurora@2.5.3:
+    resolution: {integrity: sha512-XYe7kcXSGp+cJIWgkKn0Uv/RwY1bIJdQAtJFC+KZRsodHhw1sfsQ4zrroX+07tNy0Z0DG5rObzGzPDWfrCuNUA==}
     dependencies:
       axios: 1.5.0
       js-cookie: 3.0.5
-      normalize.css: r2.cnpmjs.org/normalize.css@8.0.1
-      nprogress: r2.cnpmjs.org/nprogress@0.2.0
+      normalize.css: 8.0.1
+      nprogress: 0.2.0
       pinia: 2.1.6(vue@3.3.4)
       vue: 3.3.4
-      vue-class-component: r2.cnpmjs.org/vue-class-component@8.0.0-rc.1(vue@3.3.4)
+      vue-class-component: 8.0.0-rc.1(vue@3.3.4)
       vue-i18n: 9.4.1(vue@3.3.4)
       vue-router: 4.2.4(vue@3.3.4)
       vue3-click-away: 1.2.4
@@ -1483,6 +1487,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /normalize.css@8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
+
+  /nprogress@0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+    dev: false
+
   /nth-check@1.0.2:
     resolution: {integrity: sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==}
     dependencies:
@@ -1589,6 +1601,10 @@ packages:
   /prismjs@1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
     engines: {node: '>=6'}
+    dev: false
+
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
     dev: false
 
   /psl@1.9.0:
@@ -1804,6 +1820,11 @@ packages:
     hasBin: true
     dev: false
 
+  /to-fast-properties@2.0.0:
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
+    engines: {node: '>=4'}
+    dev: false
+
   /to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -1861,6 +1882,14 @@ packages:
 
   /vscode-textmate@8.0.0:
     resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
+    dev: false
+
+  /vue-class-component@8.0.0-rc.1(vue@3.3.4):
+    resolution: {integrity: sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.4
     dev: false
 
   /vue-demi@0.12.5(vue@3.3.4):
@@ -2124,12 +2153,6 @@ packages:
     version: 1.0.3
     dev: false
 
-  r2.cnpmjs.org/estree-walker@2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/estree-walker/-/estree-walker-2.0.2.tgz}
-    name: estree-walker
-    version: 2.0.2
-    dev: false
-
   r2.cnpmjs.org/finalhandler@1.1.2:
     resolution: {integrity: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/finalhandler/-/finalhandler-1.1.2.tgz}
     name: finalhandler
@@ -2239,18 +2262,6 @@ packages:
       - supports-color
     dev: false
 
-  r2.cnpmjs.org/normalize.css@8.0.1:
-    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/normalize.css/-/normalize.css-8.0.1.tgz}
-    name: normalize.css
-    version: 8.0.1
-    dev: false
-
-  r2.cnpmjs.org/nprogress@0.2.0:
-    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/nprogress/-/nprogress-0.2.0.tgz}
-    name: nprogress
-    version: 0.2.0
-    dev: false
-
   r2.cnpmjs.org/on-finished@2.3.0:
     resolution: {integrity: sha512-ikqdkGAAyf/X/gPhXGvfgAytDZtDbr+bkNUJ0N9h5MI/dmdgCs3l6hoHrcUv41sRKew3jIwrp4qQDXiK99Utww==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/on-finished/-/on-finished-2.3.0.tgz}
     name: on-finished
@@ -2295,12 +2306,6 @@ packages:
     version: 1.0.0
     dev: false
 
-  r2.cnpmjs.org/proxy-from-env@1.1.0:
-    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz}
-    name: proxy-from-env
-    version: 1.1.0
-    dev: false
-
   r2.cnpmjs.org/range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/range-parser/-/range-parser-1.2.1.tgz}
     name: range-parser
@@ -2340,13 +2345,6 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  r2.cnpmjs.org/to-fast-properties@2.0.0:
-    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/to-fast-properties/-/to-fast-properties-2.0.0.tgz}
-    name: to-fast-properties
-    version: 2.0.0
-    engines: {node: '>=4'}
-    dev: false
-
   r2.cnpmjs.org/toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/toidentifier/-/toidentifier-1.0.1.tgz}
     name: toidentifier
@@ -2373,17 +2371,6 @@ packages:
     name: vary
     version: 1.1.2
     engines: {node: '>= 0.8'}
-    dev: false
-
-  r2.cnpmjs.org/vue-class-component@8.0.0-rc.1(vue@3.3.4):
-    resolution: {integrity: sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==, registry: https://registry.npmjs.org/, tarball: https://r2.cnpmjs.org/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz}
-    id: r2.cnpmjs.org/vue-class-component/8.0.0-rc.1
-    name: vue-class-component
-    version: 8.0.0-rc.1
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      vue: 3.3.4
     dev: false
 
   r2.cnpmjs.org/wrappy@1.0.2:
