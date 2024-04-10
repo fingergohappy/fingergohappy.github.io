@@ -7,6 +7,7 @@ categories:
 cover: https://source.unsplash.com/1200x628
 date: 2024-01-05 15:24:32
 abstracts: 如何优雅的linux下安装多版本的jdk并进行切换
+toc: true
 ---
 
 

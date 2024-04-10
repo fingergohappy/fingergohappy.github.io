@@ -7,6 +7,7 @@ categories:
 cover: https://source.unsplash.com/gray-laptop-computer-turned-on-EaB4Ml7C7fE/1200x628
 date: 2023-11-01 16:05:14
 abstracts: neovim配置formatters
+toc: true
 ---
 
 最近再搞`vue3`,使用了[element plus admin](https://element-plus-admin.cn/)这个模版库,没想到一直报错

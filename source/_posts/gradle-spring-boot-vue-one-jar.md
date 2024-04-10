@@ -8,6 +8,7 @@ categories:
 cover: https://source.unsplash.com/1200x628
 date: 2023-11-11 15:23:43
 abstracts: 使用gradle将spring-boot和vue打入一个jar包
+toc: true
 ---
 
 之前用`maven`搞过将`spring-boot`和`vue`打成一个jar包,现在的项目,我使用了`gralde`,又是同样的需求,使用`gradle`的`composite`似乎更优雅一些.

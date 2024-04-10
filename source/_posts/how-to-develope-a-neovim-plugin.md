@@ -7,6 +7,7 @@ categories:
 cover: https://source.unsplash.com/iMwiPZNX3SI/1200x628
 date: 2023-10-12 17:10:19
 abstracts: 手把手胸贴胸教你开发一个neovim插件
+toc: true
 ---
 
 

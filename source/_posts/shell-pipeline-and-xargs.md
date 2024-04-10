@@ -7,6 +7,7 @@ categories:
 cover: https://source.unsplash.com/a-computer-screen-with-a-program-running-on-it-NLSXFjl_nhc/1200x628
 date: 2023-10-31 17:38:16
 abstracts: shell中管道操作符和xargs的区别
+toc: true
 ---
 
 

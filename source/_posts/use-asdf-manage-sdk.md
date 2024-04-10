@@ -8,6 +8,7 @@ categories:
 cover: https://source.unsplash.com/monitor-displaying-indexhtml-codes-_SgRNwAVNKw/1200x628
 date: 2023-09-26 12:18:16
 abstracts:
+toc: true
 ---
 
 对于我这种使用多种语言开发,并且可能在给个版本之前来回切换的人来说,一直渴望一个好的`sdk`管理工具

@@ -8,6 +8,7 @@ categories:
 cover: https://source.unsplash.com/oA7MMRxTVzo/1200x628
 date: 2023-09-23 19:10:04
 abstracts: vscode更好用的vim插件:Neovim
+toc: true
 ---
 
 

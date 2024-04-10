@@ -8,9 +8,9 @@ categories:
 cover: https://source.unsplash.com/lzh3hPtJz9c/1200x628
 abstracts: hexo 提交后自动部署github page
 feature: true
+toc: true
 ---
 
-# hexo 提交后自动部署github page
 
 hexo有几种部署方式,一种是本地编译后,直接push `public`路径下的静态文件,一种是通过`cli`方式,向仓库提交`source`下的的`markdown`文件,触发`action`.实现自动部署
 
