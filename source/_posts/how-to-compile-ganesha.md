@@ -412,7 +412,7 @@ vim ~/.ssh/config
 
 ```
 # 缩写
-Host 
+Host ganesha 
 # ip或者hostname
 HostName 192.168.101.121
 Port 22
