@@ -428,7 +428,7 @@ IdentityFile ~/.ssh/id_rsa
 
 ## 安装必要的插件
 
-*一下插件都是在远程安装的*
+**以下插件都是在远程安装的**
 
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - [CMake](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
