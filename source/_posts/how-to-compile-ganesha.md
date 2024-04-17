@@ -221,6 +221,8 @@ EXPORT
 
 	# We're only interested in NFSv4 in this configuration
 	Protocols = 4;
+    # 如果不行，试试：
+    # Protocols = 3,4,NFSv4,NFSv3;
 
 	# NFSv4 does not allow UDP transport
 	Transports = TCP;
@@ -383,6 +385,19 @@ LOG
 
 ```bash
 mount -t nfs -o nfsvers=4.1,proto=tcp <ganesha-host-name>:<ganesha-pseudo-path> <mount-point>
+```
+
+## 问题排查
+
+```bash
+# 查看进程
+ps -ef | grep ganesha
+# 查看是否启动端口
+lsof -i -P | grep ganesha
+netstat -tnlp | grep ganesha
+
+# 查看否是有挂载点
+showmount
 ```
 
 
