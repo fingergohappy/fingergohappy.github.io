@@ -131,7 +131,7 @@ cp ../build/ganesha.nfsd ./
 cp ../nfs-ganesha/src/config_samples/ceph.conf ./
 ```
 
-## 复制并link so文件
+## 复制并link so文件(可选)
 
 由于是使用`ceph`作为`ganesha`的后端,需要复制编译好的`so`文件:
 
@@ -142,6 +142,17 @@ mkdir -p /usr/lib64/ganesha/
 
 ln -s [path]/libfsalcephs.so /usr/lib64/ganesha/
  
+```
+
+如果不想进行软连接，可以在配置文件中添加如下配置：
+
+```bash
+NFS_CORE_PARAM
+{
+    # 如果不想软连接so文件，可以进行如下配置
+    Plugins_Dir = "./";
+}
+
 ```
 
 ## 修改一下配置文件如下:
@@ -182,6 +193,8 @@ NFS_CORE_PARAM
     # 如果不行，试试：
     # Protocols = 3,4,NFSv4,NFSv3;
 	# NFS_Port = 8088;
+    # 如果不想软连接so文件，可以进行如下配置
+    Plugins_Dir = "./";
 }
 
 NFSv4
