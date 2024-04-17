@@ -106,7 +106,7 @@ cmake \
     -DUSE_FSAL_MEM=OFF \
     -DUSE_9P=OFF \
 
-    ../../nfs-ganesha/src
+    ../nfs-ganesha/src
 
 # 编译
 cmake --build .
