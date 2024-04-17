@@ -179,6 +179,8 @@ NFS_CORE_PARAM
 	# In this configuration, we're just exporting NFSv4. In practice, it's
 	# best to use NFSv4.1+ to get the benefit of sessions.
 	Protocols = 4;
+    # 如果不行，试试：
+    # Protocols = 3,4,NFSv4,NFSv3;
 	# NFS_Port = 8088;
 }
 
@@ -221,8 +223,6 @@ EXPORT
 
 	# We're only interested in NFSv4 in this configuration
 	Protocols = 4;
-    # 如果不行，试试：
-    # Protocols = 3,4,NFSv4,NFSv3;
 
 	# NFSv4 does not allow UDP transport
 	Transports = TCP;
