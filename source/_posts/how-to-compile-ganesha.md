@@ -377,6 +377,14 @@ LOG
 ```bash
 ./ganesha.nfsd -f ceph.conf -F -L log
 ```
+# 挂载
+
+在另一台机器进行挂载:
+
+```bash
+mount -t nfs -o nfsvers=4.1,proto=tcp <ganesha-host-name>:<ganesha-pseudo-path> <mount-point>
+```
+
 
 # vscode 配置远程开发
 
