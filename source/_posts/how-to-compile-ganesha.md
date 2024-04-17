@@ -397,7 +397,7 @@ mount -t nfs -o nfsvers=4.1,proto=tcp <ganesha-host-name>:<ganesha-pseudo-path> 
 
 ### 配置密钥
 
-如果没有`ssh`密钥，执行百度生成一份
+如果没有`ssh`密钥，自行百度生成一份
 
 ```bash 
 ssh-copy-id ${username}@${host}
@@ -503,4 +503,4 @@ IdentityFile ~/.ssh/id_rsa
 
 ## 验证是否配置成功
 
-点击左侧的`cmake`插件，点击`build`,如果能成功的`build`,就是成功，如果不能，执行根据报错排查
+点击左侧的`cmake`插件，点击`build`,如果能成功的`build`,就是成功，如果不能，自行根据报错排查
