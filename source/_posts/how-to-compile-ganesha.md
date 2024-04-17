@@ -485,7 +485,7 @@ IdentityFile ~/.ssh/id_rsa
     "cmake.configureArgs": [
         "-DUSE_FSAL_PROXY_V4=OFF",
         "-DUSE_FSAL_PROXY_V3=OFF",
-        "-DUSE_FSAL_VFS=ON",
+        "-DUSE_FSAL_VFS=OFF",
         "-DUSE_FSAL_LUSTRE=OFF",
         "-DUSE_FSAL_LIZARDFS=OFF",
         "-DUSE_FSAL_KVSFS=OFF",
