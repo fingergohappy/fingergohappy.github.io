@@ -6,6 +6,12 @@ tags: Mysql
 categories: Mysql
 cover: https://source.unsplash.com/a-desk-with-a-tv-and-a-remote-control-on-it-94xWLyKfRXo/1200x628
 ---
+
+Mysql 使用binlog配置主从同步
+
+<!--more-->
+
+
 # master 配置
 
 
