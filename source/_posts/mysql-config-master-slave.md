@@ -4,7 +4,6 @@ toc: true
 date: 2024-05-07 19:48:38
 tags: Mysql
 categories: Mysql
-cover: https://source.unsplash.com/a-desk-with-a-tv-and-a-remote-control-on-it-94xWLyKfRXo/1200x628
 ---
 
 Mysql 使用binlog配置主从同步
@@ -39,14 +38,12 @@ innodb_flush_log_at_trx_commit = 1     #每次事务提交将日志缓冲区写�
 ## 创建从库用户
 
 ```sql
-
 CREATE USER 'slave1'@'127.0.0.1' IDENTIFIED BY 'qw1234';
 GRANT REPLICATION SLAVE ON *.* TO 'slave1'@'127.0.0.1';
 FLUSH PRIVILEGES;
 ```
 > 对于8.4以上的版本,要么启用`mysql_native_password`插件，要么使用`rsa`认证
 我使用的启用`mysql_native_password`插件
-{.is-warning}
 
 
 

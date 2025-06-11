@@ -4,7 +4,6 @@ toc: true
 date: 2024-05-13 16:26:39
 tags: proxysql
 categories: proxysql
-cover: https://source.unsplash.com/a-lake-surrounded-by-rocks-and-grass-with-mountains-in-the-background-1eZfCWs8IM8/1200x628
 ---
 proxysql安装指引
 
@@ -39,7 +38,6 @@ proxysql安装指引
 ## 无网络安装
 
 >如果你的网络环境比较特殊,无法使用`yum` 安装,可以下载以上`rpm`包
-{.is-info}
 
 `rpm`可以去这个[网站](https://rpmfind.net/linux/rpm2html/search.php)
 
@@ -129,7 +127,6 @@ Dec 13 11:53:40 jira-node01 proxysql[29610]: 2023-12-13 11:53:40 [INFO] Current 
 Dec 13 11:53:40 jira-node01 proxysql[29610]: 2023-12-13 11:53:40 [INFO] Using OpenSSL version: OpenSSL 3.1.0 14 Mar 2023
 Dec 13 11:53:40 jira-node01 proxysql[29610]: 2023-12-13 11:53:40 [INFO] No SSL keys/certificates found in datadir (/var/lib/proxysql). Generating ne...ificates.
 Dec 13 11:53:41 jira-node01 systemd[1]: Started High Performance Advanced Proxy for MySQL.
-
 ```
 则证明启动成功
 

@@ -1,6 +1,5 @@
 ---
 title: proxysql配置读写分离
-cover: https://source.unsplash.com/a-person-standing-on-the-side-of-a-road-at-night-k_oHn7XBhVA/1200x628
 toc: true
 date: 2024-05-13 16:32:54
 tags: proxysql
@@ -61,6 +60,7 @@ mysql -uadmin -padmin -h127.0.0.1 -P6032
 
 [官方文档](https://proxysql.com/documentation/configuring-proxysql/)
 
+```
 ┌─────────────────────────────────┐
 │                                 │
 │            Runtime              │
@@ -83,6 +83,7 @@ mysql -uadmin -padmin -h127.0.0.1 -P6032
 │                                 │
 └─────────────────────────────────┘
 
+```
 
 简单来说`proxysql`一共有3层,我们通过`mysql`客户端连接到`proxysql`进行配置后,是在`Memory`层进行操作,所有想使修改生效/持久化,要使用`laod/save`命令
 

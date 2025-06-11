@@ -5,7 +5,6 @@ tags:
   - hexo
 categories:
   - hexo
-cover: https://source.unsplash.com/lzh3hPtJz9c/1200x628
 abstracts: hexo 提交后自动部署github page
 feature: true
 toc: true

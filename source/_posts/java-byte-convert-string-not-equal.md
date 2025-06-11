@@ -5,7 +5,6 @@ tags:
   - encode
 categories:
   - java
-cover: https://source.unsplash.com/AtccjBkdl-I/1200x628
 date: 2023-09-21 20:39:21
 abstracts: java byte array 转String在转回byte array不相等
 feature: true
@@ -172,16 +171,14 @@ public int decode(byte[] sa, int sp, int len, char[] da) {
 
 解决方法很简单:
 找一个编码覆盖`0x00` 到 `0xff`,并且只用一个字节编码的编码格式就行,
-没错,就是你-`ISO-8859-1`!
+也就是`ISO-8859-1`
 
 所以下面代码输出就是`true`
 
 ```java
-
       byte[] byteArray = new byte[]{0x01, (byte)0x81, (byte)0xAA, 0x44, 0x45};
       String str = new String(byteArray,"ISO-8859-1");
       byte [] revertByteArray = str.getBytes("ISO-8859-1");
       System.out.println(Arrays.equals(byteArray,revertByteArray));
-
 ```
 

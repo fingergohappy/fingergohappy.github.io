@@ -5,7 +5,6 @@ tags:
   - gradle
 categories:
   - java
-cover: https://source.unsplash.com/1200x628
 date: 2023-12-22 20:21:39
 abstracts: gradle将spring boot项目打包成无依赖jar包的轻量级包
 toc: true

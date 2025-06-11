@@ -6,7 +6,6 @@ tags:
     - ganesha
     - vscode
 categories: ganesha
-cover: https://source.unsplash.com/a-man-in-a-space-suit-standing-in-front-of-a-space-station-nOr0PFuQ8Qc/1200x628
 ---
 
 # 简介
@@ -141,7 +140,6 @@ cp ../build/FSAL/FSAL_CEPH/libfsalceph.so ./
 mkdir -p /usr/lib64/ganesha/
 
 ln -s [path]/libfsalcephs.so /usr/lib64/ganesha/
- 
 ```
 
 如果不想进行软连接，可以在配置文件中添加如下配置：
@@ -152,7 +150,6 @@ NFS_CORE_PARAM
     # 如果不想软连接so文件，可以进行如下配置
     Plugins_Dir = "./";
 }
-
 ```
 
 ## 修改一下配置文件如下:

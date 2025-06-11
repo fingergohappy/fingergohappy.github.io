@@ -12,9 +12,6 @@ toc: true
 ---
 
 
-# 前言
-
-对我来说,使用`vim`后有两个后遗症,一是想把`vim`配置的全知全能,二是在任何软件中都想启用`vim`模式,现在前者的症状已经有所减轻,后者愈发严重
 
 # 更好用的vim插件
 
@@ -24,6 +21,7 @@ toc: true
 <!--more-->
 
 `flash`
+
 ![flash](flash-demo.gif)
 
 `easy-motion`
@@ -131,6 +129,7 @@ map('n','<leader>e',"<cmd>call VSCodeCall('workbench.action.quickOpenNavigateNex
 **注意**
 
 ```lua
+
 -- 这里很重要,防止光标到折叠为止,折叠自动展开
 map("n","k","gk",{remap = true})
 map("n","j","gj",{remap = true})

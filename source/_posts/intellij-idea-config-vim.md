@@ -4,17 +4,12 @@ tags:
   - idea
   - vim
 categories:
-  - 万物皆可vim
-cover: https://source.unsplash.com/Bss5nhYnLKU/1200x628
+  - vim
 date: 2023-09-22 17:04:46
 abstracts: 如何在idea中配置vim,让写代码更加舒服
 ---
 
 
-# vim搓一切?
-
-有一说一,vim虽然可以配置的很舒服,但是对于`java`程序员来说,用vim去写`java`是真的折磨,除非你想进行自我折磨,变成代码仙人.
-所以最省心的方案就是在`idea`中下一个vim插件
 
 
 

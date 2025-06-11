@@ -5,7 +5,6 @@ tags:
   - spring-boot
 categories:
   - gradle
-cover: https://source.unsplash.com/1200x628
 date: 2023-11-11 15:23:43
 abstracts: 使用gradle将spring-boot和vue打入一个jar包
 toc: true
@@ -27,6 +26,7 @@ toc: true
 ├── web #vue目录
 │   ├── build.gradle.kts
 │   ├── settings.gradle.kts
+
 ```
 <!--more-->
 
@@ -78,6 +78,7 @@ includeBuild("./web")
 
 
 ```kotlin
+
 plugins {
     base
 }
@@ -102,6 +103,7 @@ tasks{
         dependsOn(gradle.includedBuild("app").task(":jar"))
     }
 }
+
 ```
 
 这样执行`gradle :build-jar`,就会生成一个带有`vue`打包后的`dist`目录的`jar`包

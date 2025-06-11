@@ -1,20 +1,15 @@
-
+---
 title: 手把手教你开发一个neovim插件
 tags:
   - neovim
 categories:
   - neovim奇技淫巧
-cover: https://source.unsplash.com/iMwiPZNX3SI/1200x628
 date: 2023-10-12 17:10:19
 abstracts: 手把手胸贴胸教你开发一个neovim插件
 toc: true
 ---
 
 
-# 开篇废话
-
-使用`neovim`久了,使用了众多插件,不自己开发一个插件,怎么好标榜自己是一个`vimer`?
-今天老夫就手把手教大家开发一个自己的`neovim`插件
 
 # 项目结构与插件路径
 
@@ -113,6 +108,4 @@ lua require('lowb').say_lowb()
 
 
 
-现在一个简单的`neovim`插件就开发完成了,至于能做什么
 
-**想象力越大,能力越大**

@@ -5,8 +5,7 @@ tags:
   - linux
   - 快捷键
 categories:
-  - 键指如飞
-cover: https://source.unsplash.com/zGuBURGGmdY/1200x628
+  - shortcut
 date: 2023-09-24 15:44:05
 abstracts: 终端各种快捷键汇总
 toc: true

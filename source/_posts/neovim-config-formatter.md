@@ -4,7 +4,6 @@ tags:
   - neovim
 categories:
   - neovim奇技淫巧
-cover: https://source.unsplash.com/gray-laptop-computer-turned-on-EaB4Ml7C7fE/1200x628
 date: 2023-11-01 16:05:14
 abstracts: neovim配置formatters
 toc: true
@@ -30,7 +29,6 @@ toc: true
 <!--more-->
 
 ```lua
-
     {
             "mhartington/formatter.nvim",
             name = "formatter",
@@ -51,7 +49,6 @@ toc: true
                 require("formatter").setup(opts)
             end
         }
-
 ```
 
 这里需要注意的点是

@@ -6,7 +6,6 @@ tags:
 categories:
   - some litttle tricks
 date: 2023-09-20 10:37:19
-cover: https://source.unsplash.com/m_HRfLhgABo/1200x628
 abstracts: macos结合使用,vim切换模式实现自动切换输入法
 feature: true
 toc: true
@@ -27,7 +26,7 @@ toc: true
 
 `karabiner`是mac下一个按键功能映射的软件,可以自己定义`json`文件实现许多复杂的功能的映射
 
-`brew`不解释连招
+`brew`安装
 <!--more-->
 
 
@@ -37,7 +36,7 @@ brew install karabiner
 
 ## 安装im-select
 
-继续`brew`不解释连招
+继续`brew`安装
 
 ```bash
 brew install im-select

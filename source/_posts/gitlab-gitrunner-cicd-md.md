@@ -1,6 +1,5 @@
 ---
-title: gitlab使用gitlab-runner进行CICDD指引
-cover: https://source.unsplash.com//1200x628
+title: gitlab使用gitlab-runner进行CICD指引
 toc: true
 date: 2025-06-11 14:13:27
 tags:
@@ -64,7 +63,8 @@ sudo gitlab-runner register \
 
 参数说明:
 
-```--non-interactive: 非交互式注册
+```
+--non-interactive: 非交互式注册
     --url: gitlab的地址
     --registration-token: 注册令牌
     --executor: 执行器类型，常用的有shell、docker等
@@ -81,7 +81,6 @@ sudo gitlab-runner register \
 
 实例
 ```yaml
-
 # 全局变量
 variables:
   PNPM_CACHE_DIR: ".pnpm-store"

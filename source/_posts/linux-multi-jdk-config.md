@@ -4,7 +4,6 @@ tags:
   - linux
 categories:
   - linux
-cover: https://source.unsplash.com/1200x628
 date: 2024-01-05 15:24:32
 abstracts: 如何优雅的linux下安装多版本的jdk并进行切换
 toc: true
@@ -19,8 +18,8 @@ toc: true
 
 # alternatives 
 
-`alternatives`是`linux`系统中一个十分强大的命令(此句是废话,linux每个命令都很强大),
-主要功能就是为了解决,系统中有类似的命令,给用户一个选择的方式,在多个`jdk`的切换就很有用,可以在多个`jdk`版本切换
+`alternatives`是`linux`系统中一个十分强大的命令,
+主要功能就是为了解决,系统中有类似的命令,给用户一个选择的方式,在多个`jdk`的切换就很有用
 
 
 <!--more-->

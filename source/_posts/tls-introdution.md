@@ -1,6 +1,5 @@
 ---
 title: tls加密简介
-cover: https://source.unsplash.com//1200x628
 toc: true
 date: 2024-10-19 17:17:15
 tags: 
