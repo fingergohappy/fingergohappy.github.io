@@ -1,5 +1,5 @@
 ---
-title: gitlab使用gitlab-runner进行cicd指引
+title: gitlab使用gitlab-runner进行CICDD指引
 cover: https://source.unsplash.com//1200x628
 toc: true
 date: 2025-06-11 14:13:27
@@ -164,7 +164,8 @@ deploy:
 
 #### 结构说明
 
-这份yaml文件还是听见但得,主要包括stages、variables、jobs等部分。
+这份yaml文件还是挺简单的,主要包括stages、variables、jobs等部分。
+参考下[官方文档](https://docs.gitlab.com/ee/ci/yaml/)就能写的七七八八.
 
 
 #### 冒号问题
